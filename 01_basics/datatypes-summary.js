@@ -28,3 +28,24 @@ const myfunc = function() {
 }
 
 // console.log(typeof myfunc)
+
+//************************************************************************************************************************************
+
+// Stack(Primitive), Heap (Non-Primitive)
+
+let myyoutubename = "ashishchanclani"
+let anothername = myyoutubename
+anothername = "chaiwithashish"
+
+// console.log(myyoutubename)
+// console.log(anothername)
+// when we use primitive data stack is used in which copy of the datatype is provided
+// when we use non-primitive reference is given so the original value will also be changed
+let userOne = {
+    email : "user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "ashish@yahoo.com"
+console.log(userOne.email)
